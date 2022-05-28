@@ -1,0 +1,30 @@
+@import '../../assets/styles/base.scss';
+
+.header {
+  width: 100vw;
+  z-index: 1000;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 42px;
+  background: $contrast-color;
+  position: fixed;
+
+  img {
+    width: 40px;
+    margin-right: $space-tiny;
+    vertical-align: middle;
+  }
+
+  .site-identify {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-name {
+    @extend .T24_SM32;
+    color: $dark-color;
+    text-align: center;
+  }
+}

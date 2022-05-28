@@ -1,0 +1,11 @@
+@import './assets/styles/base.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  background: $gray-color;
+}

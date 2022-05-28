@@ -1,0 +1,30 @@
+@import '../../assets/styles/base.scss';
+
+.sidebar {
+    width: 236px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(150.28% 46.17% at -4.45% 19.01%, #D7FFF0 0%, rgba(255, 255, 255, 0) 100%);
+    padding-top: 100px;
+    z-index: 900;
+
+    .menu-item {
+        @extend .T16_M22;
+        margin: 8px 0px 2px 12px;
+        padding: 12px 18px;
+        text-decoration: none;
+        text-align: justify;
+    }
+
+    a {
+        color: $unselect-color;
+    }
+
+    .active, a:hover {
+        color: $contrast-color;
+        background: $button-backdround;
+        border-radius: 8px 0px 0px 8px;
+    }
+}
+
