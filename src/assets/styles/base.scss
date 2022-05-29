@@ -1,6 +1,8 @@
 $gray-color: #ededf2;
+$dark-gray-color: #9CA3AF;
 $text-link: #18a1ee;
-$button-backdround: #04a96d;
+$button-background: #04a96d;
+$button-hover: #06cf85;
 $dark-color: #080828;
 $green-color: #08a948;
 $secondary-color: #c92bff;
@@ -8,6 +10,8 @@ $unselect-color: #7a7a7a;
 $contrast-color: #ffffff;
 $highlight-text: #001aff;
 
+$space-bigger: 48px;
+$space-big: 32px;
 $space-normal: 24px;
 $space-small: 16px;
 $space-smaller: 12px;
@@ -55,6 +59,14 @@ $space-tiny: 8px;
   line-height: 18px;
 }
 
+.T10_G18 {
+  /* T12/G18 */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+}
+
 .T14_R22 {
   /* T14/R22 */
   font-style: normal;
@@ -67,6 +79,14 @@ $space-tiny: 8px;
   /* T14/M22 */
   font-style: normal;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.T14_SM22 {
+  /* T14/M22 */
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
   line-height: 22px;
 }
@@ -88,16 +108,44 @@ $space-tiny: 8px;
   line-height: 22px;
 }
 
-.T20_M28 {
+.T20_SM28 {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
 }
 
-.T30_SM38 {
+.T20_G28 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T18_M28 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.T18_SM28 {
   font-style: normal;
   font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.T30_M38 {
+  font-style: normal;
+  font-weight: 500;
   font-size: 30px;
+  line-height: 38px;
+}
+
+.T60_M38 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
   line-height: 38px;
 }

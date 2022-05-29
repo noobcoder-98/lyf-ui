@@ -7,5 +7,155 @@
 }
 
 .main {
+  display: flex;
+  height: 100vh;
+}
+
+.page {
   background: $gray-color;
+  width: 100vw;
+  padding-top: 96px;
+  padding-bottom: $space-big;
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.content {
+  margin: auto;
+}
+
+.round-btn {
+  @extend .T14_M22;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: $space-tiny $space-small;
+  height: 38px;
+  width: inherit;
+  border-radius: 39px;
+  cursor: pointer;
+}
+
+.transparent-btn {
+  @extend .T16_M22;
+  padding: 12px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 2px solid #06CF85;
+  border-radius: 10px;
+  text-align: center;
+  color: #06CF85;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.transparent-btn:hover {
+  background: #06CF85;
+  color: $contrast-color;
+}
+
+.green:hover {
+  background: $button-hover;
+}
+
+.green {
+  background: $button-background;
+  color: $contrast-color;
+}
+
+.title-big {
+  @extend .T24_SM30;
+  color: $dark-color;
+  margin-bottom: $space-normal;
+}
+
+.title-small {
+  @extend .T14_M22;
+  color: $unselect-color;
+}
+
+.title {
+  @extend .T18_M28;
+  color: $unselect-color;
+}
+.note {
+  @extend .T10_G18;
+  color: $dark-gray-color;
+}
+.value-big {
+  @extend .T60_M38;
+  color: $button-hover;
+}
+
+.value {
+  @extend .T30_M38;
+  color: $button-hover;
+}
+
+.number-format {
+  @extend .T24_SM32;
+  background: $contrast-color;
+  color: $unselect-color;
+  border: 1px solid $gray-color;
+  border-radius: $space-tiny;
+  width: 100%;
+}
+input:focus {
+  border: 1px solid $gray-color;
+}
+
+.tbl {
+  margin-bottom: $space-bigger;
+  .tbl-header {
+    @extend .T16_SM22;
+    color: $dark-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-normal;
+
+    .tbl-col:first-child {
+      align-items: flex-start
+    }
+  }
+
+  .tbl-row {
+    @extend .T14_M22;
+    color: $unselect-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-normal;
+    border-bottom: 1px solid $gray-color;
+  }
+
+  .tbl-row::last-child {
+    border-bottom: none;
+  }
+  .tbl-col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tbl-col-icon {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    .col-icon-holder {
+      margin-right: $space-small;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
 }

@@ -1,0 +1,145 @@
+@import '../../assets/styles/base.scss';
+
+.stake {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reward-summary, .staking {
+  margin: $space-normal;
+  padding: $space-normal;
+  background: $contrast-color;
+  border-radius: $space-normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.reward-content {
+  display: flex;
+}
+.earned {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #2ee68e;
+  margin-right: $space-small;
+  border-radius: $space-normal;
+
+  .title, .value-big {
+    margin: $space-normal 0px 0px $space-normal;
+    color: $contrast-color;
+  }
+}
+
+.your-balance {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space-normal;
+    .title, .value-big {
+        flex: 1;
+    }
+}
+
+.your-balance, .detail {
+    border: 1px solid $gray-color;
+    border-radius: $space-normal;
+    padding: $space-normal;
+}
+
+.reward-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+    border: 1px solid $gray-color;
+    margin: $space-small;
+}
+.detail {
+  display: flex;
+  .locked,
+  .unlocked {
+    flex: 1;
+  }
+
+  .note, .round-btn {
+      margin-top: $space-normal;
+  }
+
+}
+
+
+.title {
+  margin-top: $space-big;
+}
+.item-container {
+  border: 1px solid $gray-color;
+  border-radius: 8px 8px 0px 0px;
+  padding: $space-big $space-smaller;
+  margin-top: $space-tiny;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .name {
+    @extend .T18_SM28;
+    color: $dark-color;
+  }
+
+  .name-small,
+  .value {
+    @extend .T16_SM22;
+  }
+
+  .staked-balance,
+  .earned-info {
+    display: flex;
+  }
+}
+
+.interface {
+  display: flex;
+  background: #f6f6f6;
+  border: 1px solid $gray-color;
+  padding: $space-big $space-smaller;
+  border-radius: 0px 0px 8px 8px;
+
+  .input-container {
+    flex: 3;
+    display: flex;
+    .round-btn {
+        margin: 0 $space-big;
+    }
+  }
+
+  .claim-container {
+    flex: 1;
+  }
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .row {
+    margin-bottom: $space-tiny;
+    padding: 0 $space-big;
+  }
+
+  .claim-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .green {
+        min-width: 50%;
+    }
+  }
+}
