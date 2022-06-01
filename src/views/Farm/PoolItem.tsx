@@ -4,6 +4,7 @@ import IcCake from 'assets/images/cake.svg'
 import IcBusd from 'assets/images/busd.svg'
 import './index.scss'
 import { DatePicker, InputNumber } from 'antd'
+import { NavLink } from 'react-router-dom'
 
 export default function PoolItem() {
   const onChange = (value: number) => {
@@ -54,10 +55,12 @@ export default function PoolItem() {
           </div>
         </div>
         <div className="tbl-col input-number">
-          <InputNumber min={1} max={10} defaultValue={3} step={0.5}/>
+          <InputNumber min={1} max={10} defaultValue={3} step={0.5} />
         </div>
-        <div className='tbl-col'>
-          <div className='transparent-btn'>Farm</div>
+        <div className="tbl-col">
+          <NavLink to={`/farm/${1}`}>
+            <div className="transparent-btn">Farm</div>
+          </NavLink>
         </div>
       </div>
     </div>

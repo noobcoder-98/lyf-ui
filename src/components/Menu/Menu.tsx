@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom'
 export default function Menu() {
   return (
     <>
+      <NavLink exact={true} to={'/lending'} className={'menu-item'}>
+        Lending
+      </NavLink>
       <NavLink exact={true} to={'/farm'} className={'menu-item'}>
         Farm
       </NavLink>

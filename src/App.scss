@@ -83,6 +83,12 @@
   @extend .T18_M28;
   color: $unselect-color;
 }
+
+.text {
+  @extend .T16_M22;
+  color: $unselect-color;
+}
+
 .note {
   @extend .T10_G18;
   color: $dark-gray-color;
@@ -97,6 +103,16 @@
   color: $button-hover;
 }
 
+.value {
+  @extend .T30_M38;
+  color: $button-hover;
+}
+
+.value-small {
+  @extend .T18_SM28;
+  color: $button-hover;
+}
+
 .number-format {
   @extend .T24_SM32;
   background: $contrast-color;
@@ -107,6 +123,10 @@
 }
 input:focus {
   border: 1px solid $gray-color;
+}
+
+.input-number {
+  margin-bottom: $space-smaller;
 }
 
 .tbl {
@@ -141,8 +161,9 @@ input:focus {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-right: $space-tiny;
   }
 
   .tbl-col-icon {
@@ -150,6 +171,7 @@ input:focus {
     flex: 1;
     justify-content: flex-start;
     align-items: center;
+    margin-right: $space-tiny;
     .col-icon-holder {
       margin-right: $space-small;
       img {

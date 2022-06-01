@@ -6,6 +6,12 @@ import React, { useState } from 'react'
 import NumberFormat from 'react-number-format'
 import DaySlider from './components/Slider/DaySlider'
 import LeverageSlider from './components/Slider/LeverageSlide'
+import Chart from 'chart.js/auto';
+import { BasicChart } from './components/Chart/BasicChart'
+
+import {CategoryScale} from 'chart.js'; 
+Chart.register(CategoryScale);
+
 export default function FarmInteract() {
   const [isShowSimulator, setShowSimulator] = useState(true)
   const { Option } = Select
@@ -129,6 +135,9 @@ export default function FarmInteract() {
           <div className="title">Invest Days : </div>
           <div className="slider">
             <DaySlider />
+          </div>
+          <div className='chart'>
+            <BasicChart chartData={""}/>
           </div>
         </div>
       )}

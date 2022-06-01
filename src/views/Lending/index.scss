@@ -1,0 +1,58 @@
+@import '../../assets/styles/base.scss';
+
+.lending-container {
+  width: 90%;
+  margin: auto;
+  .lending-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .total-value {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $contrast-color;
+      padding: $space-normal;
+      border-radius: $space-normal;
+      margin-bottom: $space-normal;
+      .divider {
+        width: 100%;
+      }
+      .token-detail {
+        @extend .T20_G28;
+        color: $dark-color;
+      }
+    }
+  }
+  .lending-pool {
+      background: $contrast-color;
+      border-radius: $space-normal;
+      .title {
+          margin-top: 0px;
+      }
+      .tbl-col-icon {
+          min-width: 250px;
+      }
+      .price {
+        @extend .T12_G18;
+        white-space: nowrap;
+      }
+
+  }
+}
+
+.lending-detail {
+    width: 90%;
+    margin: auto;
+    padding: $space-bigger;
+    background: $contrast-color;
+    border-radius: $space-normal;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .btn-holder {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+}

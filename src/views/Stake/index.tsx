@@ -1,5 +1,5 @@
 import React from 'react'
-import PoolItem from './StakingItem'
+import StakingItem from './StakingItem'
 import './index.scss'
 
 export default function Stake() {
@@ -48,8 +48,8 @@ export default function Stake() {
         <div className="title-big">8 Available Staking Opportunities</div>
         <div className="filter-options"></div>
         <div className="staking-items">
-          <PoolItem />
-          <PoolItem />
+          <StakingItem />
+          <StakingItem />
         </div>
       </div>
     </div>

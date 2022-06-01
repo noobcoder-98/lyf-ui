@@ -6,13 +6,14 @@ import {
   Route,
   useParams,
   Redirect,
-  BrowserRouter,
 } from 'react-router-dom'
 import Header from './components/Header'
 import Sidebar from 'components/Sidebar'
 import Stake from 'views/Stake'
 import Farm from 'views/Farm'
 import FarmDetail from 'views/Farm/FarmDetail'
+import Lending from 'views/Lending'
+import LendingDetail from 'views/Lending/LendingDetail'
 
 function App() {
   return (
@@ -24,9 +25,11 @@ function App() {
           <div className="page">
             <div className="content">
               <Switch>
-                <Route path={'/farm'} component={Farm} />
-                <Route path={'/farmdetail'} component={FarmDetail}/>
+                <Route exact path={'/farm'} component={Farm} />
+                <Route path={'/farm/:id'} component={FarmDetail}/>
                 <Route path={'/stake'} component={Stake} />
+                <Route exact path={'/lending'} component={Lending} />
+                <Route path={'/lending/:type/:id'} component={LendingDetail} />
                 <Redirect from='/' to={'/stake'} />
               </Switch>
             </div>
