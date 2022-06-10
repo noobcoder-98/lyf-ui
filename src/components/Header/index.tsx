@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from 'assets/images/logo.png'
 import './index.scss'
+import ButtonConnect from 'components/Button/ButtonConnect'
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
         <span className="app-name">UPFI Network</span>
       </div>
       <div className="header-items">
-        <div className="round-btn green">Connect to Wallet</div>
+        <ButtonConnect />
       </div>
     </div>
   )
